@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - main function to generate a random number
+ * main - print a random number
  *
  * Retrun Always 0 (success)
  *
