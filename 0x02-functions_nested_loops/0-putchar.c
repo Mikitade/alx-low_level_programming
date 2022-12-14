@@ -11,11 +11,8 @@ int main(void)
 	_putchar('u');
 	_putchar('t');
 	_putchar('c');
-<<<<<<< HEAD
 	_putchar('c');
-=======
 	_putchar('h');
->>>>>>> 4e12a6a798eb5f096afee8fb830d6ab386cee4a4
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
