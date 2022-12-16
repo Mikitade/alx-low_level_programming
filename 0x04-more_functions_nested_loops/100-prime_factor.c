@@ -1,34 +1,29 @@
-#include "main.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
- * print_number - prints an integer.
- * @n: input integer.
- * Return: no return.
+ * main - print the largest prime number
+ *
+ * Return: Always
  */
 
-void print_number(int n)
+int main(void)
 {
-	unsigned int m, d, count;
+	long prime = 612852475143, div;
 
-	if (n < 0)
+	while (div < (prime / 2))
 	{
-		_putchar(45);
-		m = n * -1;
+		if ((prime % 2) == 0)
+		{
+			prime /= 2;
+			continue;
+		}
+		for (div = 3; div < (prime / 2); div += 2)
+		{
+			if ((prime % div) == 0)
+				prime /= div;
+		}
 	}
-	else
-	{
-		m = n;
-	}
-	d = m;
-	count = 1;
-
-	while (d > 9)
-	{
-		d /= 10;
-		count *= 10;
-	}
-	for (; count >= 1; count /= 10)
-	{
-		_putchar(((m / count) % 10) + 48);
-	}
+	printf("%ld\n", prime);
+	return (0);
 }
