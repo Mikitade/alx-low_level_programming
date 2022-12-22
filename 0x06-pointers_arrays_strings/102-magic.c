@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-/*
- * @void: void function
- */
+
 
 int main(void)
 {
