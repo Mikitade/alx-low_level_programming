@@ -2,18 +2,18 @@
 
 /**
  * string_toupper -> converting any string to upper case
- * @x: string param
+ * @X: string param
  * Return: string
  */
-char *string_toupper(char *x)
+char *string_toupper(char *X)
 {
 	int i = 0;
 
-	while (x[i])
+	while (X[i])
 	{
-		if (x[i] >= 97 && <= 122)
-			x[i] = x[i] - 32;
+		if (X[i] >= 97 && X[i] <= 122)
+			X[i] = X[i] - 32;
 		i++;
 	}
-	return (x);
+	return (X)
 }
