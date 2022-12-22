@@ -2,18 +2,17 @@
 
 /**
  * string_toupper -> converting any string to uppercase
- * @ch: pointer to char
+ * @str: parameter
  * Return: char
  */
-char *string_toupper(char *ch)
+char *string_toupper(char *str)
 {
-	int i = 0;
+	int index = 0;
 
-	while (*(ch + I) != '\0')
+	while (str[index++])
 	{
-		if (*(ch + i) >= 97 && *(ch + i) <= 122)
-			*(ch + i) = *(ch + i) - ' ';
-		i++;
+		if (str[index] >= 'a' && str[index] <= 'z')
+			str[index] -= 32;
 	}
-	return (ch);
+	return (str);
 }
