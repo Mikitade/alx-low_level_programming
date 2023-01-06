@@ -1,4 +1,4 @@
-#include <stdio.h
+#include <stdio.h>
 
 /**
 * main -> this is a function to print its name
@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < argc; i++)
 	{
-		printf("%s\n", argv[i]);
+		printf("%", argv[i]);
 	}
 	return (0);
 }
