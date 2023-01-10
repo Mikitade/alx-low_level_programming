@@ -20,14 +20,14 @@ char *str_concat(char *s1, char *s2)
 	while (s2[j])
 		j++;
 
-	1 = i + j;
-	s = (char *)malloc(1 * sizeof(char) + 1)
+	l = i + j;
+	s = (char *)malloc(l * sizeof(char) + 1);
 		if (s == NULL)
 			return (NULL);
 	j = 0;
-	while (k < 1)
+	while (k < l)
 	{
-		if (k < 1)
+		if (k < l)
 			s[k] = s1[k];
 		if (k >= i)
 		{
