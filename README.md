@@ -1,1 +1,1 @@
-C - Pointers, arrays and strings
+0x0E. C - Structures, typedef
